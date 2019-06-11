@@ -1,0 +1,73 @@
+@charset "UTF-8";
+#blua {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/*styleEditorContent*/
+.styleEditorContent {
+    padding: 20px;
+}
+
+.styleEditorContent h1 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.textComponent .setText input {
+    width: 210px;
+    padding-left: 10px;
+    border: 1px solid #b4b4b4;
+}
+
+.styleEditorContent .displayflexbetween {
+    margin: 15px auto;
+}
+
+.styleEditorContent .displayflexcenter {
+    margin-top: 40px;
+}
+
+/*change the style of */
+.styleEditorContent .ant-slider-rail {
+    background-color: #cccccc !important;
+}
+
+.styleEditorContent select[name="CanvasSetting"] {
+    width: 170px;
+}
+/*color picker style*/
+.swatchContent{
+    padding: 1px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 1px;
+    display: inline-block;
+    cursor: pointer;
+}
+.swatchInside{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+.popover{
+    position: absolute;
+    z-index: 2;
+}
+.cover{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+/*保存*/
+.saveBtn {
+    padding: 3px 30px;
+    background: #FFC400;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    margin: 20px 10px;
+    cursor: pointer;
+}

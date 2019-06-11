@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*dashboard*/
+.ant-layout-sider.ant-layout-sider-dark {
+    flex: 0 0 300px !important;
+    max-width: 300px !important;
+    min-width: 300px !important;
+    width: 300px !important;
+    background: #ffffff;
+}
+
+.dashboard .ant-menu-item-selected, .ant-menu-inline .ant-menu-item:after {
+    border-right: none !important;
+}
+
+.dashboard .logTop {
+    width: 100%;
+    height: 160px;
+    background: #2F323A;
+    padding: 20px;
+}
+
+.dashboard .logTop img {
+    display: block;
+    cursor: pointer;
+}
+
+.dashboard .logTop .displayflexcenter {
+    margin-top: 25px;
+}
+
+/*nav*/
+.dashboard ul.displayflexbetween li {
+    width: 33.33%;
+    background: #FFC400;
+    font-family: Exo2-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.dashboard ul.displayflexbetween li:nth-child(2) {
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+}
+
+.dashboard .ant-menu-submenu-title, .dashboard .ant-menu-item {
+    text-align: left !important;
+}
+
+.dashboard .ant-menu-submenu-arrow {
+    position: absolute;
+    top: 50%;
+    right: 40px !important;
+}
+
+.dashboard .ant-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .ant-menu-item:hover .anticon-setting {
+    display: block;
+}
+.dashboard .showCase{
+    height: calc(100vh - 210px);
+    /*overflow-y: auto;*/
+}
+.dashboard .showCase .anticon-setting {
+    margin-right: 20px;
+    display: none;
+}
+/*!*content*!*/
+/*.ant-layout .ant-layout-content{*/
+    /*height: 100vh;*/
+    /*overflow-y: auto;*/
+/*}*/
+/*welcome modal*/
+.dashboardIndex .ant-modal-content img.logoWelcome {
+    margin: 100px auto 20px;
+}
+
+.dashboardIndex .ant-modal-content h1 {
+    font-family: Exo2-Bold;
+    font-size: 40px;
+    color: #FEFEFE;
+    line-height: 30px;
+}
+
+.dashboardIndex .ant-modal-content h2 {
+    font-family: Exo2-Thin;
+    font-size: 40px;
+    color: #FEFEFE;
+    line-height: 10px;
+}
+
+.dashboardIndex .ant-modal-content .startBtn {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #FFC400;
+    color: #fff;
+    font-family: Exo2-Bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+#blua{
+    background:url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+}
+.contentAntnew{
+    overflow-y: hidden;
+}

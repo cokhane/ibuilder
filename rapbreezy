@@ -1,0 +1,90 @@
+#!/bin/bash
+
+counter=1
+until [ $counter -eq 0 ]
+do
+
+
+
+function pushCodeAsTags(){
+clear
+
+x=$(ls -l --format single-column | grep -v node_modules)
+
+#make a code for this to check the new directory
+
+cp -rfv /c/Task/Present Present Present React/103018/xxxbuilder/{$x} /d/gitLabRepo/builder-admin
+
+cd  /d/gitLabRepo/builder-admin
+
+bash rapbeh
+
+counter=0	
+}
+
+function pushCodeAsMasters(){
+clear
+cd  /d/gitLabRepo/builder-admin
+bash rapbibeh
+
+counter=0	
+}
+
+function createLocalhostForQA(){
+	echo " "
+	echo " "
+	npm run dreamtech
+
+	cd /d/gitLabRepo/ico-admin/dist/dreamtech
+
+	if [ http-server -p 6661 ]
+	then
+		echo test
+	elif [ http-server -p 6662 ] 
+	then
+		echo test
+   elif [ http-server -p 6665 ] 
+	then
+		echo test
+	else
+		http-server -p 6664
+	fi
+
+	clear
+
+	counter=0
+}
+
+#MENU
+echo " "
+echo " "
+echo "MENU"
+echo "1.) Send to BES :* :* :*"
+echo "2.) Push to Gitlab [Tags] "
+echo "3.) Push to Master  "
+echo " "
+
+read -p "Enter Choice : " COMMENT
+#SWITCH
+case $COMMENT in
+"1")
+    createLocalhostForQA
+    ;;
+"2")
+    pushCodeAsTags
+    ;;
+"3")
+    pushCodeAsMasters
+    ;;
+
+ *)
+	read -p " wrong input"
+    ;;
+esac
+
+done
+
+echo " "
+echo " "
+
+
